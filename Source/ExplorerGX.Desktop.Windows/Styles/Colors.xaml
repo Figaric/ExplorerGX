@@ -1,0 +1,53 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Color x:Key="ColorSuperDark">#272727</Color>
+    <SolidColorBrush x:Key="BrushSuperDark" Color="{StaticResource ColorSuperDark}" />
+
+    <Color x:Key="ColorVeryDark">#2D2D2D</Color>
+    <SolidColorBrush x:Key="BrushVeryDark" Color="{StaticResource ColorVeryDark}" />
+
+    <Color x:Key="ColorDarker">#353535</Color>
+    <SolidColorBrush x:Key="BrushDarker" Color="{StaticResource ColorDarker}" />
+
+    <Color x:Key="ColorDark">#474747</Color>
+    <SolidColorBrush x:Key="BrushDark" Color="{StaticResource ColorDark}" />
+
+    <Color x:Key="ColorMedium">#656565</Color>
+    <SolidColorBrush x:Key="BrushMedium" Color="{StaticResource ColorMedium}" />
+
+    <Color x:Key="ColorTransparentMedium">#00656565</Color>
+    <SolidColorBrush x:Key="BrushTransparentMedium" Color="{StaticResource ColorTransparentMedium}" />
+    
+    <Color x:Key="ColorLight">#979797</Color>
+    <SolidColorBrush x:Key="BrushLight" Color="{StaticResource ColorLight}" />
+
+    <Color x:Key="ColorLighter">#C4C4C4</Color>
+    <SolidColorBrush x:Key="BrushLighter" Color="{StaticResource ColorLighter}" />
+
+    <Color x:Key="ColorVeryLight">#FFFFFF</Color>
+    <SolidColorBrush x:Key="BrushVeryLight" Color="{StaticResource ColorVeryLight}" />
+
+    <Color x:Key="ColorOrange">#EB6F00</Color>
+    <SolidColorBrush x:Key="BrushOrange" Color="{StaticResource ColorOrange}" />
+
+    <Color x:Key="ColorRed">#DD5347</Color>
+    <SolidColorBrush x:Key="BrushRed" Color="{StaticResource ColorRed}" />
+
+    <Color x:Key="ColorGreen">#43B581</Color>
+    <SolidColorBrush x:Key="BrushGreen" Color="{StaticResource ColorGreen}" />
+
+    <Color x:Key="ColorBlue">#4B8BF4</Color>
+    <SolidColorBrush x:Key="BrushBlue" Color="{StaticResource ColorBlue}" />
+
+    <LinearGradientBrush x:Key="BrushGradientBlueToGreen">
+        <GradientStop Color="{StaticResource ColorBlue}" Offset="1" />
+        <GradientStop Color="{StaticResource ColorGreen}" Offset="0.2" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="BrushGradientOrangeToRed">
+        <GradientStop Color="{StaticResource ColorRed}" Offset="1" />
+        <GradientStop Color="{StaticResource ColorOrange}" Offset="0.2" />
+    </LinearGradientBrush>
+
+</ResourceDictionary>
