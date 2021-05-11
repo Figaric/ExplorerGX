@@ -1,0 +1,45 @@
+@use "colors";
+
+.btn {
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.title-bar-button {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s;
+}
+
+#minimize {
+  border-color: colors.$color-green;
+  background: rgba(23, 160, 93, 0.3);
+
+  &:hover {
+    background: colors.$color-green;
+  }
+}
+
+#expand {
+  border-color: colors.$color-green;
+  background: rgba(23, 160, 93, 0.3);
+
+  &:hover {
+    background: colors.$color-green;
+  }
+}
+
+#close {
+  border-color: colors.$color-red;
+  background: rgba(221, 83, 71, 0.3);
+
+  &:hover {
+    background: colors.$color-red;
+  }
+}
