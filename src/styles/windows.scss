@@ -1,0 +1,60 @@
+@use "colors";
+
+#main-grid {
+  background-color: #343434;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 46px 1px 1fr;
+
+  #title-bar {
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    background-color: #525252;
+    -webkit-app-region: drag;
+
+    #title-bar-buttons {
+      margin-left: auto;
+      display: flex;
+      flex-direction: row;
+      -webkit-app-region: no-drag;
+
+      &:last-child {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .drop-shadow-line {
+    z-index: 1;
+    grid-row: 2;
+    background-color: colors.$color-super-dark;
+    box-shadow: 0 0 8px black;
+  }
+
+  #content {
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+
+    #side-tool-bar {
+      padding: 10px 0;
+      grid-column: 1;
+      background-color: #3e3e3e;
+      border: 0px solid white;
+      border-right: 1px solid colors.$color-super-dark;
+      display: flex;
+      justify-content: center;
+
+      #add-bookmark {
+        color: #505050;
+        font-size: 35px;
+        transition: color 0.3s;
+
+        &:hover {
+          color: colors.$color-blue;
+        }
+      }
+    }
+  }
+}
